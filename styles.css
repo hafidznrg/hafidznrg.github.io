@@ -1,0 +1,87 @@
+section{
+    min-height: 420px;
+    padding-top: 30px;
+}
+
+.header .container{
+    margin-top: 50px;
+    padding-top: 60px;
+    padding-bottom: 40px;
+    height: 100%;
+}
+
+.header .container img{
+    padding-bottom: 20px;
+    width: 25%;
+}
+
+.foto{
+    max-width: 350px;
+    padding-top: 20px;
+}
+
+.tab { 
+    display:inline-block; 
+    margin-left: 40px; 
+}
+
+.text-justify{
+    text-align: justify;
+}
+
+textarea{
+    height: 100px;
+}
+
+.card-blog{
+    border-radius:10% 2%;
+}
+
+.insta {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    -webkit-background-clip: text;
+            /* Also define standard property for compatibility */
+            background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: ease-out 0.5s;
+}
+
+.github{
+    color: black;
+    transition: ease-out 0.5s;
+}
+
+.twitter{
+    color: #0099CC;
+    transition: ease-out 0.5s;
+}
+
+.insta:hover,
+.github:hover,
+.twitter:hover{
+    transform: scale(1.2);
+}
+
+.card-portfolio{
+    border-radius: 20px;
+    background-color: lavender;
+}
+
+.foto_portfolio img{
+    padding-top: 30px;
+    margin-bottom: 10px;
+    height: 300px;
+    width: auto;
+}
+
+.kirim{
+    border: 2px solid;
+    border-radius: 25px;
+    margin-left: 43%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+}
+
+.kirim:hover{
+    border: 2px solid;
+}
