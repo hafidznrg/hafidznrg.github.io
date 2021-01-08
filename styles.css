@@ -62,12 +62,12 @@ textarea{
     transform: scale(1.2);
 }
 
-.card-portfolio{
+.card-project{
     border-radius: 20px;
     background-color: lavender;
 }
 
-.foto_portfolio img{
+.foto_project img{
     padding-top: 30px;
     margin-bottom: 10px;
     height: 300px;
