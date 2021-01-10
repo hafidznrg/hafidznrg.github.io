@@ -63,15 +63,17 @@ textarea{
 }
 
 .card-project{
+    min-width: 400px;
     border-radius: 20px;
     background-color: lavender;
 }
 
 .foto_project img{
+    position: relative;
     padding-top: 30px;
     margin-bottom: 10px;
-    height: 300px;
-    width: auto;
+    /* height: 300px; */
+    width: 100%;
 }
 
 .kirim{
@@ -84,4 +86,24 @@ textarea{
 
 .kirim:hover{
     border: 2px solid;
+}
+#logo{
+    position: absolute;
+    left: 140px;
+    transform: translate(-50%, -50%) scale(0.4);
+}
+
+#logo path{
+    animation: animasi 3s infinite alternate;
+}
+
+
+@keyframes animasi{
+    from{
+        stroke-dasharray: 0 50%;
+        stroke-dashoffset: 30%;
+    }
+    to{
+        stroke-dasharray: 50% 0;
+    }
 }
