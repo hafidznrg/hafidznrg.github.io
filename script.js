@@ -3,6 +3,8 @@ $( '#navbar .navbar-nav div a' ).on( 'click', function () {
 		$( '#navbar .navbar-nav' ).find( 'div.active' ).removeClass( 'active' );
 		$( this ).parent( 'div' ).addClass( 'active' );
 	};
+	$( '#navbar .navbar-nav' ).find( 'div.active' ).removeClass( 'active' );
+	$( this ).parent( 'div' ).addClass( 'active' );
 });
 
 // $(window).scroll(function (event) {
@@ -17,7 +19,10 @@ $( '#navbar .navbar-nav div a' ).on( 'click', function () {
 // });
 
 $( '#navbar .navbar-toggler' ).on('click', function() {
-    $( '#navbar .navbar-nav' ).find( 'div.active' ).removeClass( 'active' );
+    // $( '#navbar .navbar-nav' ).find( 'div.active' ).removeClass( 'active' );
+	if ($('#navbar .navbar-toggler').attr('aria-expanded') === 'true') {
+		$( '#navbar .navbar-collapse .box-nav' ).addClass( 'nav-responsive' );
+	};
 });
 
 $("#wrapper").click( function() {

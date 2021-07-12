@@ -14,7 +14,9 @@
     --white: #ffffff;
     --white-alpha-25: rgba(255,255,255, 0.25);
     --white-alpha-40: rgba(405,255,255, 0.4);
+    --white-alpha-80: rgba(405,255,255, 0.8);
     --black-semi-dark : rgba(18, 18, 18, 0.7);
+    --yellow-light : rgba(248, 248, 45, 0.3);
     --backdrop-filter-blur: blur(5px);
 }
 
@@ -39,6 +41,7 @@ body{
     overflow-x: hidden;
     /* -webkit-top-highlight-color: transparent; */
     padding: 5vh 15px;
+    padding-top: 80px !important;
     font-family: "Quicksand", sans-serif;
     font-weight: 500;
 }
@@ -63,7 +66,7 @@ img{
 section{
     background-color: var(--white-alpha-25);
     border: 1px solid var(--white-alpha-40);
-    min-height: 90vh;
+    min-height: 80vh;
     border-radius: 30px;
 }
 
@@ -93,14 +96,17 @@ a{
 
 /* NAVBAR */
 .navbar{
-    /* background: var(--white-alpha-40); */
+    /* background: var(--white-alpha-80); */
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     padding: 20px 5%;
-    /* margin-bottom: 40px; */
-    /* z-index: 2; */
+}
+
+.navbar-nav{
+    /* background: blue; */
+    align-items: center;
 }
 
 .navbar-brand{
@@ -113,24 +119,33 @@ a{
     text-align: center;
 }
 
-.active{
+
+/* .active{
     background: linear-gradient(180deg, #FFFFFF -19.55%, #F8F82D 98.96%, #F8F82D 98.97%, rgba(248, 248, 45, 0.6) 98.97%);
     filter: blur(0.5px);
     border-radius: 20px;
-}
+    border: 2px solid var(--white-alpha-40);
+} */
+
+/* .active a{
+    color: #FF0000 !important;
+} */
 
 .nav-link{
     font-weight: 700;
 
 }
 
+.nav-responsive{
+    margin: 10px 0;
+}
+
 
 /* HOME */
 .home-section{
-    /* background: #000; */
     display: flex;
-    padding: 120px 0;
-    margin-top: 40px;
+    /* padding: 120px 0; */
+    /* margin-top: 40px; */
 }
 
 .home-text,
@@ -156,14 +171,11 @@ a{
 
 .home-img{
     position: relative;
-    /* background: #000; */
 }
 
 .home-img .img-box{
     max-width: 360px;
-    /* background-color: var(--white-alpha-25); */
     border-radius: 50%;
-    /* border: 8px solid var(--white-alpha-25) */
     margin: auto;
 }
 
@@ -206,4 +218,17 @@ a{
 
     background: radial-gradient(50% 50% at 50% 50%, #FFA5A5 0%, rgba(255, 165, 165, 0) 100%);
     filter: blur(4px);
+}
+
+/* About */
+.hidden{
+    display: none !important;
+}
+
+.title{
+    margin-top: 20px;
+}
+
+.title h1{
+    font-weight: 800;
 }
