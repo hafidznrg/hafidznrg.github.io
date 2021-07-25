@@ -4,30 +4,10 @@ $( '#navbar .navbar-nav a' ).on( 'click', function () {
 	let section = $( this ).attr( 'aria-label' );
 	$( '.main' ).find( 'section' ).addClass( 'hidden' );
 	$( '.main #'+ section ).removeClass( 'hidden' );
-	// window.scrollTo(0,0);
-	// $('html, body').animate({scrollTop: $(window).offset().top}, 0);
 	$(window).scrollTop(0);
 });
 
-// $(window).scroll(function (event) {
-//     var scroll = $(window).scrollTop();
-// 	console.log(scroll);
-    
-    // if (scroll> 70){
-    //     $( '#navbar' ).addClass( 'scroll' )
-    // }
-    // else{
-    //     $( '#navbar' ).removeClass( 'scroll' )
-    // }
-// });
-
 $( '#navbar .navbar-toggler' ).on('click', function() {
-	// console.log($( '#navbar' ).hasClass( 'bg-white' ));
-	// if ($( '#navbar' ).hasClass( 'bg-white' )){
-	// 	$( '#navbar' ).removeClass( 'bg-white' );
-	// } else {
-	// 	$( '#navbar' ).addClass( 'bg-white' );
-	// }
 	if ($('#navbar .navbar-toggler').attr('aria-expanded') === 'true') {
 		$( '#navbar .navbar-collapse .box-nav' ).addClass( 'nav-responsive' );
 		$( '#navbar' ).removeClass( 'fadeOut' ).addClass( ' bg-white fadeIn');
@@ -37,6 +17,24 @@ $( '#navbar .navbar-toggler' ).on('click', function() {
 	};
 });
 
-// $("#wrapper").click( function() {
-// 	$(".icon").toggleClass("close");
-// });
+// Belum bisa implementasinya
+// var form = document.getElementById("myform");
+    
+//     async function handleSubmit(event) {
+//       event.preventDefault();
+//       var status = document.getElementById("my-form-status");
+//       var data = new FormData(event.target);
+//       fetch(event.target.action, {
+//         method: form.method,
+//         body: data,
+//         headers: {
+//             'Accept': 'application/json'
+//         }
+//       }).then(response => {
+//         status.innerHTML = "Thanks for your submission!";
+//         form.reset()
+//       }).catch(error => {
+//         status.innerHTML = "Oops! There was a problem submitting your form"
+//       });
+//     }
+//     form.addEventListener("submit", handleSubmit)

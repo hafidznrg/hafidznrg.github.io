@@ -11,7 +11,7 @@
     <title>Hafidznrg</title>
   </head>
   <body>
-      <div class="main">
+    <div class="main">
         <nav class="navbar navbar-expand-lg" id="navbar">
             <div class="container-fluid">
               <a class="navbar-brand" href="#">Hafidznrg</a>
@@ -29,7 +29,7 @@
             </div>
         </nav>
 
-        <section id="home" class="home-section align-items-center hidden">
+        <section id="home" class="home-section align-items-center">
               <div class="container-lg mx-auto mt-5 row align-items-center d-flex justify-content-evenly">
                   <div class="col-sm-4 home-text">
                     <h1 >Hi! I am</h1>
@@ -66,7 +66,7 @@
             </div>
         </section>
 
-        <section id="project" class="project-section align-items-center">
+        <section id="project" class="project-section align-items-center hidden">
           <div class="title text-center">
             <h1>My Project</h1>
           </div>
@@ -78,7 +78,7 @@
                 </div>
               </div>
               <div class="col-md-5">
-                <h4>To Do List Website</h4>
+                <h4 class="fw-bold">To Do List Website</h4>
                 <br>
                 <p class="text-justify">Website sederhana yang memanfaatkan sistem CRUD secara lengkap. Website ini dibuat dengan kombinasi HTML, CSS, dan Javascript</p>
               </div>
@@ -91,7 +91,7 @@
                 </div>
               </div>
               <div class="col-md-5">
-                <h4>Pengkom Cafe</h4>
+                <h4 class="fw-bold" >Pengkom Cafe</h4>
                 <br>
                 <p class="text-justify">Sebuah aplikasi kasir sederhana yang dibuat dengan bahasa Phyton dan menggunakan Tkinter untuk membuat tampilan usernya. Pengkom Cafe dibuat untuk memenuhi Tugas Besar Dasar Pemrograman. Program ini dibuat oleh Hafidz Nur Rahman Ghozali, Angelica Winasta Sinisuka, dan Rania Dwi Fadhilah</p>
               </div>
@@ -105,31 +105,32 @@
             <h1>Contact Me</h1>
           </div>
           <div class="container row mx-auto mt-4">
-            <div class="col-sm-4 col-lg-7 field-contact bg-dar">
-              <div class="input my-2 mx-auto">
-                <input type="text" placeholder="Nama">
-              </div>
-              <div class="input my-2 mx-auto">
-                <input type="text" placeholder="Email">
-              </div>
-              <div class="input my-2 mx-auto">
-                <input type="text" placeholder="Subjek Pesan">
-              </div>
-              <div class="input my-2 mx-auto message">
-                <textarea name="message" rows="6" cols="30" placeholder="Pesan"></textarea>
-              </div>
+            <div class="col-sm-4 col-lg-7 field-contact">
+              <form action="https://formspree.io/f/xgerlgoj" method="post" id="myForm">
+                <div class="input my-2 mx-auto">
+                  <input type="text" placeholder="Nama">
+                </div>
+                <div class="input my-2 mx-auto">
+                  <input type="text" placeholder="Email">
+                </div>
+                <div class="input my-2 mx-auto">
+                  <input type="text" placeholder="Subjek Pesan">
+                </div>
+                <div class="input my-2 mx-auto message">
+                  <textarea name="message" rows="6" cols="30" placeholder="Pesan"></textarea>
+                </div>
+              </form>
 
-              <div class="submit mx-auto mt-3 text-center">
+              <div class="submit mx-auto mt-3 text-center my-form-button">
                 <a href="#">Submit Message</a>
               </div>
+              <p id="my-form-status"></p>
             </div>
 
             <div class="col-sm-4 col-lg-5 contact-desc ps-3 text-center">
-              <!-- <h5 class="sub-title">Email</h5> -->
               <div class="line"></div>
-              <p class="contact-email">hafidznur.hn@gmail.com</p>
+              <p class="contact-email fw-bold">hafidznur.hn@gmail.com</p>
               <div class="line"></div>
-              <!-- <h5 class="sub-title">Follow Me</h5> -->
               <div class="row mySosmed d-flex justify-content-center my-3">
                 <div class="circle-sosmed text-center mx-2">
                   <a target="_blank" href="https://www.instagram.com/hafidznrg" class="icon fa fa-instagram instagram"></a>
