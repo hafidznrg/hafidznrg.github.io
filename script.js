@@ -9,9 +9,9 @@ $( '#navbar .navbar-nav a' ).on( 'click', function () {
 	$(window).scrollTop(0);
 });
 
-$(window).scroll(function (event) {
-    var scroll = $(window).scrollTop();
-	console.log(scroll);
+// $(window).scroll(function (event) {
+//     var scroll = $(window).scrollTop();
+// 	console.log(scroll);
     
     // if (scroll> 70){
     //     $( '#navbar' ).addClass( 'scroll' )
@@ -19,12 +19,21 @@ $(window).scroll(function (event) {
     // else{
     //     $( '#navbar' ).removeClass( 'scroll' )
     // }
-});
+// });
 
 $( '#navbar .navbar-toggler' ).on('click', function() {
-    // $( '#navbar .navbar-nav' ).find( 'div.active' ).removeClass( 'active' );
+	// console.log($( '#navbar' ).hasClass( 'bg-white' ));
+	// if ($( '#navbar' ).hasClass( 'bg-white' )){
+	// 	$( '#navbar' ).removeClass( 'bg-white' );
+	// } else {
+	// 	$( '#navbar' ).addClass( 'bg-white' );
+	// }
 	if ($('#navbar .navbar-toggler').attr('aria-expanded') === 'true') {
 		$( '#navbar .navbar-collapse .box-nav' ).addClass( 'nav-responsive' );
+		$( '#navbar' ).removeClass( 'fadeOut' ).addClass( ' bg-white fadeIn');
+	} else {
+		$( '#navbar .navbar-collapse .box-nav' ).removeClass( 'nav-responsive' );
+		$( '#navbar' ).removeClass( ' bg-white fadeIn' ).addClass( 'fadeOut');
 	};
 });
 

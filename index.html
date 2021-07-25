@@ -20,170 +20,117 @@
               </button>
               <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav ms-auto mx-4">
-                  <a class="nav-link active" aria-current="page" href="#home" aria-label="home">Home</a>
-                  <a class="nav-link" href="#about" aria-label="about">About Me</a>
-                  <a class="nav-link" href="#project" aria-label="project">My Project</a>
-                  <a class="nav-link" href="#contact" aria-label="contact">Contact</a>
-                  <div class="box-nav mx-2 active">
-                  </div>
-                  <div class="box-nav mx-2">
-                  </div>
-                  <div class="box-nav mx-2">
-                  </div>
-                  <div class="box-nav mx-2">
-                  </div>
+                  <a class="nav-link active" aria-current="page" href="#" aria-label="home">Home</a>
+                  <a class="nav-link" href="#" aria-label="about">About Me</a>
+                  <a class="nav-link" href="#" aria-label="project">My Project</a>
+                  <a class="nav-link" href="#" aria-label="contact">Contact</a>
                 </div>
               </div>
             </div>
         </nav>
 
         <section id="home" class="home-section align-items-center hidden">
-          <div class="container">
-              <div class="row align-items-center">
-                  <div class="home-text">
+              <div class="container-lg mx-auto mt-5 row align-items-center d-flex justify-content-evenly">
+                  <div class="col-sm-4 home-text">
                     <h1 >Hi! I am</h1>
                     <h1 class="text-yellow">Hafidz Nur</h1>
                     <br>
                     <p>An undergraduate student who is interested in web development and robotics</p>
                   </div>
     
-                  <div class="home-img">
-                    <div class="img-box">
+                  <div class="col-sm-4 home-img">
+                    <div class="img-box d-flex justify-content-center">
                           <img src="./Assets/foto_circle.png" alt="profile-img">
                     </div>
-                    <div class="purple"></div>
+                    <!-- <div class="purple"></div>
                     <div class="pink"></div>
-                    <div class="yellow"></div>
+                    <div class="yellow"></div> -->
                   </div>
               </div>
-          </div>
         </section>
 
         <section id="about" class="about-section align-items-center hidden">
-          <div class="container container-about">
             <div class="title text-center">
               <h1>About</h1>
             </div>
-            <div class="row align-items-center">
-              <div class="about-img">
-                <div class="img-about logic">
-                    <img src="./Assets/Project/Logic.png" alt="">
-                </div>
-                <div class="img-about robot">
-                    <img src="./Assets/Project/Robot.png" alt="">
-                </div>
-                <div class="img-about programming">
-                    <img src="./Assets/Project/Programming.png" alt="">
+            <div class="container row mx-auto align-items-center justify-content-center">
+              <div class="col-sm-4 mx-4 d-flex justify-content-center about-kiri">
+                <img src="./Assets/myFoto.png" alt="">
+              </div>
+              
+              <div class="col-sm-4 mx-4 pt-5 px-3"> <!-- about-text align-items-center -->
+                <h2>Hello!</h2>
+                <p class="desc-about">My name is Hafidz Nur Rahman Ghozali. I currently studying Computer Science/Informatics in Bandung Institute of Technology.</p>
+                <p class="desc-about"></p>
+              </div>
+            </div>
+        </section>
+
+        <section id="project" class="project-section align-items-center">
+          <div class="title text-center">
+            <h1>My Project</h1>
+          </div>
+          <div class="container container-project">
+            <div class="row align-items-center d-flex flex-row">
+              <div class="col-md-6">
+                <div class="card-picture mx-auto">
+                  <img src="./Assets/Project/toDoList.png" class="card-img-top" alt="...">
                 </div>
               </div>
-
-              <div class="about-text align-items-center">
-                <p class="desc-about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem doloribus cum excepturi ut temporibus explicabo ratione minima itaque iste commodi reiciendis nobis, repellendus quia voluptatum velit molestiae harum odio. Iste.</p>
+              <div class="col-md-5">
+                <h4>To Do List Website</h4>
+                <br>
+                <p class="text-justify">Website sederhana yang memanfaatkan sistem CRUD secara lengkap. Website ini dibuat dengan kombinasi HTML, CSS, dan Javascript</p>
+              </div>
+            </div>
+            <div class="line-project"></div>
+            <div class="row align-items-center d-flex flex-row-reverse">
+              <div class="col-md-6">
+                <div class="card-picture mx-auto">
+                  <img src="./Assets/Project/pengkomCafe.png" class="card-img-top" alt="...">
+                </div>
+              </div>
+              <div class="col-md-5">
+                <h4>Pengkom Cafe</h4>
+                <br>
+                <p class="text-justify">Sebuah aplikasi kasir sederhana yang dibuat dengan bahasa Phyton dan menggunakan Tkinter untuk membuat tampilan usernya. Pengkom Cafe dibuat untuk memenuhi Tugas Besar Dasar Pemrograman. Program ini dibuat oleh Hafidz Nur Rahman Ghozali, Angelica Winasta Sinisuka, dan Rania Dwi Fadhilah</p>
               </div>
             </div>
           </div>
-        </section>
-
-        <section id="project" class="project-section align-items-center hidden">
-            <div class="title text-center">
-                <h1>My Project</h1>
-            </div>
-            <div class=" container row align-items-center mx-auto">
-                <div class="col-sm-6 justify-content-center">
-                    <div class="card align-items-center h-100 mx-auto">
-                    <div class="card-picture">
-                        <img src="./Assets/Project/toDoList.png" class="card-img-top" alt="...">
-                    </div>
-                    <div class="card-body row">
-                        <div class="col-8 title-project">
-                        <h5 class="card-title">To Do List Website</h5>
-                        </div>
-                        <div class="col-4 link text-end">
-                        <a href="" class="link-project">More..</a>
-                        </div>
-                    </div>
-                    </div>
-                </div>
         
-                <div class="col-sm-6 justify-content-center">
-                    <div class="card align-items-center h-100 mx-auto">
-                    <div class="card-picture">
-                        <img src="./Assets/Project/toDoList.png" class="card-img-top" alt="...">
-                    </div>
-                    <div class="card-body row">
-                        <div class="col-8 title-project">
-                        <h5 class="card-title">To Do List Website</h5>
-                        </div>
-                        <div class="col-4 link text-end">
-                        <a href="" class="link-project">More..</a>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-
-                <div class="col-sm-6 justify-content-center">
-                  <div class="card align-items-center h-100 mx-auto">
-                  <div class="card-picture">
-                      <img src="./Assets/Project/toDoList.png" class="card-img-top" alt="...">
-                  </div>
-                  <div class="card-body row">
-                      <div class="col-8 title-project">
-                      <h5 class="card-title">To Do List Website</h5>
-                      </div>
-                      <div class="col-4 link text-end">
-                      <a href="" class="link-project">More..</a>
-                      </div>
-                  </div>
-                  </div>
-              </div>
-      
-              <div class="col-sm-6 justify-content-center">
-                  <div class="card align-items-center h-100 mx-auto">
-                  <div class="card-picture">
-                      <img src="./Assets/Project/toDoList.png" class="card-img-top" alt="...">
-                  </div>
-                  <div class="card-body row">
-                      <div class="col-8 title-project">
-                      <h5 class="card-title">To Do List Website</h5>
-                      </div>
-                      <div class="col-4 link text-end">
-                      <a href="" class="link-project">More..</a>
-                      </div>
-                  </div>
-                  </div>
-              </div>
-            </div>
         </section>
 
-        <section id="contact" class="align-items-center">
+        <section id="contact" class="align-items-center hidden">
           <div class="title text-center">
             <h1>Contact Me</h1>
           </div>
           <div class="container row mx-auto mt-4">
-            <div class="col-7 field-contact bg-dar">
-              <div class="input my-2">
+            <div class="col-sm-4 col-lg-7 field-contact bg-dar">
+              <div class="input my-2 mx-auto">
                 <input type="text" placeholder="Nama">
               </div>
-              <div class="input my-2">
+              <div class="input my-2 mx-auto">
                 <input type="text" placeholder="Email">
               </div>
-              <div class="input my-2">
+              <div class="input my-2 mx-auto">
                 <input type="text" placeholder="Subjek Pesan">
               </div>
-              <div class="input my-2 message">
+              <div class="input my-2 mx-auto message">
                 <textarea name="message" rows="6" cols="30" placeholder="Pesan"></textarea>
               </div>
 
-              <div class="submit">
+              <div class="submit mx-auto mt-3 text-center">
                 <a href="#">Submit Message</a>
               </div>
             </div>
 
-            <div class="col-5 contact-desc">
-              <h5 class="sub-title">Email</h5>
-              <p>hafidznur.hn@gmail.com</p>
-              <h5 class="sub-title">Follow Me</h5>
-              <div class="row mySosmed">
+            <div class="col-sm-4 col-lg-5 contact-desc ps-3 text-center">
+              <!-- <h5 class="sub-title">Email</h5> -->
+              <div class="line"></div>
+              <p class="contact-email">hafidznur.hn@gmail.com</p>
+              <div class="line"></div>
+              <!-- <h5 class="sub-title">Follow Me</h5> -->
+              <div class="row mySosmed d-flex justify-content-center my-3">
                 <div class="circle-sosmed text-center mx-2">
                   <a target="_blank" href="https://www.instagram.com/hafidznrg" class="icon fa fa-instagram instagram"></a>
                 </div>

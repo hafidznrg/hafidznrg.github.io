@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+/* @import "~rfs/stylus"; */
 
 /* Variable */
 :root{
@@ -81,6 +82,7 @@ a{
 
 .main{
     position: relative;
+    width: 98%;
     max-width: 1200px;
     margin: auto;
 }
@@ -107,7 +109,8 @@ a{
     width: 100%;
     padding-top: 30px;
     padding-left: 5%;
-    /* padding-right: 5%; */
+    padding-right: 5%;
+    border-radius: 30px;
 }
 
 .navbar-nav{
@@ -120,12 +123,6 @@ a{
     font-weight: 600;
     font-size: 24px;
 }
-
-/* .box-nav {
-    width: 110px;
-    height: 40px;
-    text-align: center;
-} */
 
 .nav-link{
     font-weight: 700;
@@ -150,7 +147,74 @@ a{
 }
 
 .nav-responsive{
+    background-color: white;
     margin: 10px 0;
+    z-index: 2;
+}
+
+.fadeIn{
+    -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 1s; /* Firefox < 16 */
+        -ms-animation: fadein 1s; /* Internet Explorer */
+         -o-animation: fadein 1s; /* Opera < 12.1 */
+            animation: fadein 1s;
+}
+
+.fadeOut{
+    -webkit-animation: fadeOut 1s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadeOut 1s; /* Firefox < 16 */
+        -ms-animation: fadeOut 1s; /* Internet Explorer */
+         -o-animation: fadeOut 1s; /* Opera < 12.1 */
+            animation: fadeOut 1s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to   { opacity: 0; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+@-moz-keyframes fadeOut {
+    from { opacity: 1; }
+    to   { opacity: 0; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+@-webkit-keyframes fadeOut {
+    from { opacity: 1; }
+    to   { opacity: 0; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+@-ms-keyframes fadeOut {
+    from { opacity: 1; }
+    to   { opacity: 0; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+@-o-keyframes fadeOut {
+    from { opacity: 1; }
+    to   { opacity: 0; }
 }
 
 .active{
@@ -161,22 +225,25 @@ a{
 /* HOME */
 .home-section{
     display: flex;
+    flex-wrap: wrap-reverse;
 }
 
 .home-text,
 .home-img{
-    width: 50%;
+    width: 40%;
+    min-width: 300px;
     padding: 15px;
+    max-height: 400px;
 }
 
 .home-text h1{
     font-weight: 800;
-    font-size: 72px;
+    /* font-size: 64px; */
 }
 
 .home-text p{
     font-family: "Poppins", sans-serif;
-    font-size: 18px;
+    /* font-size: 18px; */
     font-weight: 400;
 }
 
@@ -195,7 +262,7 @@ a{
 }
 
 .home-img .img-box img{
-    width: 100%;
+    width: 80%;
     border-radius: 50%;
 }
 
@@ -242,104 +309,76 @@ a{
 
 .title{
     margin-top: 80px;
-    /* background: rgba(255,0,0,0.5); */
+    margin-bottom: 20px;
 }
 
 .title h1{
     font-weight: 800;
 }
 
-.about-section{
-    /* background: #fff; */
-    display: flex;
-    flex-wrap: wrap-reverse;
-}
 
-.about-img{
+.box-image{
     position: relative;
-    /* background: rgba(0,0,0,0.3); */
+    width: 280px;
+    height: 360px;
+    box-sizing: border-box;
+    border-radius: 30px;
+    background: white;
+    max-height: 300px;
 }
 
-.about-text{
-    padding: auto;
-}
-
-.about-text,
-.about-img{
-    width: 50%;
-    height: 450px;
-    padding: 15px;
-}
-.logic{
-    position: absolute;
-    zoom: 0.8;
-}
-
-.robot{
-    position: absolute;
-    zoom: 0.8;
-    top: 15vh;
-    left: 47%;
-}
-
-.programming{
-    position: absolute;
-    zoom: 0.8;
-    top: 45vh;
-    left: 14%;
+.box-image img{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 80%;
 }
 
 .desc-about{
-    margin: auto !important;
-    width: 500px !important;
+    text-align: justify;
+}
+
+.about-kiri img{
+    zoom: 0.6;
 }
 
 
 /* PROJECT */
-.project-section{
+/* .project-section{
     display: flex;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
     flex-direction: column;
-}
+} */
 
 #project .row {
-    justify-items: center;
+    width: 100%;
 }
 
-.card{
-    max-width: 500px;
-    height: 400px;
-    border-radius: 30px;
-    background: rgba(255, 255, 255, 0.6);
-    /* background-color: rgba(white, 0.05); MAU DIBUAT GLASSMORPHISM*/
-    box-shadow: 10px 10px 20px -10px rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(10px);
-    margin: 20px 20px !important;
+.container-project{
+    padding: 20px 0;;
 }
+
+.line-project{
+    width: 100%;
+    height: 3px;
+    background: #f2f2f2;
+    margin: 20px 0;
+}
+
 
 .card-picture{
     width: 90%;
     max-width: 450px;
-    margin-top: 5%;
 }
 
 .card-picture img{
-    border-radius: 15px;
+    /* zoom: 0.8; */
+    border-radius: 10px;
 }
 
-.card .card-body{
-    width: 90%;
-    font-weight: 600;
-}
-
-.card-body .title-project .card-title{
-    font-size: 18px;
-    font-weight: 600;
-}
-
-.card-body .link{
-    justify-content: flex-end;
-    font-size: 14px;
+.text-justify{
+    text-align: justify;
 }
 
 /* CONTACT */
@@ -350,8 +389,6 @@ a{
 
 .input{
     width: 90%;
-    /* width: 550px; */
-    height: 40px;
     padding: 1% 10px;
 
     background: rgba(255, 255, 255, 0.4);
@@ -368,13 +405,11 @@ a{
 }
 
 .message{
-    height: 40%;
+    height: 45%;
 }
 
 .submit{
-    padding-top: 20px;
-    padding-left: 15px;
-    max-height: 250px;
+    width: 160px;
 }
 
 .submit a{
@@ -399,6 +434,16 @@ a{
 
 .sub-title{
     font-weight: 600;
+}
+
+.line{
+    width: 100%;
+    height: 3px;
+    background: #f2f2f2;
+}
+
+.contact-email{
+    margin: 20px;
 }
 
 .circle-sosmed{
@@ -435,3 +480,17 @@ a{
     color: #0099CC;
     transition: ease-out 0.5s;
 }
+
+/* Scrollbar */
+body::-webkit-scrollbar {
+    width: 0.5em;
+  }
+   
+  body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  }
+   
+  body::-webkit-scrollbar-thumb {
+    background-color: rgb(118, 255, 175);
+    outline: 1px solid slategrey;
+  }
