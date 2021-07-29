@@ -9,11 +9,11 @@ $( '#navbar .navbar-nav a' ).on( 'click', function () {
 
 $( '#navbar .navbar-toggler' ).on('click', function() {
 	if ($('#navbar .navbar-toggler').attr('aria-expanded') === 'true') {
-		$( '#navbar .navbar-collapse .box-nav' ).addClass( 'nav-responsive' );
-		$( '#navbar' ).removeClass( 'fadeOut' ).addClass( ' bg-white fadeIn');
+		// $( '#navbar .nav-link' ).addClass('my-3');
+		$( '#navbar' ).addClass( 'nav-responsive fadeIn' ).removeClass( 'fadeOut' );
 	} else {
-		$( '#navbar .navbar-collapse .box-nav' ).removeClass( 'nav-responsive' );
-		$( '#navbar' ).removeClass( ' bg-white fadeIn' ).addClass( 'fadeOut');
+		// $( '#navbar .nav-link' ).removeClass('my-3');
+		$( '#navbar' ).removeClass( 'nav-responsive fadeIn' ).addClass( 'fadeOut' );
 	};
 });
 

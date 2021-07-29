@@ -40,8 +40,11 @@ html{
 body{
     min-height: 100vh;
     /* background-image: linear-gradient(to bottom right, var(--pink-light), var(--cyan-light) 100%); */
-    background: linear-gradient(180deg, var(--cyan-light) 0%, var(--black-semi-dark) 100%);
-    font-size: 16px;
+    /* background: linear-gradient(180deg, var(--cyan-light) 0%, var(--black-semi-dark) 100%); */
+    background-image: url("assets/Rice-Flower.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-size: 1rem;
     color: var(--blue-dark);
     line-height: 1.5;
     overflow-x: hidden;
@@ -111,17 +114,27 @@ a{
     padding-left: 5%;
     padding-right: 5%;
     border-radius: 30px;
+    animation: anim .8s ease-in-out forwards;
+}
+
+@keyframes anim {
+    0%{
+        top: -6%;
+    }
+    100%{
+        top: 0%;
+    }
 }
 
 .navbar-nav{
-    /* background: blue; */
     align-items: center;
 }
 
 .navbar-brand{
     font-family: "Poppins", sans-serif;
     font-weight: 600;
-    font-size: 24px;
+    font-size: 1.5rem;
+    color: #8359E9;
 }
 
 .nav-link{
@@ -147,74 +160,77 @@ a{
 }
 
 .nav-responsive{
-    background-color: white;
-    margin: 10px 0;
-    z-index: 2;
+    background: rgba(251, 251, 251);
+    z-index: 1;
 }
 
 .fadeIn{
-    -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
-       -moz-animation: fadein 1s; /* Firefox < 16 */
-        -ms-animation: fadein 1s; /* Internet Explorer */
-         -o-animation: fadein 1s; /* Opera < 12.1 */
-            animation: fadein 1s;
+    -webkit-animation: fadein .5s; 
+       -moz-animation: fadein .5s; 
+        -ms-animation: fadein .5s; 
+         -o-animation: fadein .5s; 
+            animation: fadein .5s;
+/* Safari, Chrome and Opera > 12.1
+Firefox < 16
+Internet Explorer
+Opera < 12.1 */
 }
 
 .fadeOut{
-    -webkit-animation: fadeOut 1s; /* Safari, Chrome and Opera > 12.1 */
-       -moz-animation: fadeOut 1s; /* Firefox < 16 */
-        -ms-animation: fadeOut 1s; /* Internet Explorer */
-         -o-animation: fadeOut 1s; /* Opera < 12.1 */
-            animation: fadeOut 1s;
+    -webkit-animation: fadeOut .5s;
+       -moz-animation: fadeOut .5s;
+        -ms-animation: fadeOut .5s;
+         -o-animation: fadeOut .5s;
+            animation: fadeOut .5s;
 }
 
 @keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+    from { background: rgba(251, 251, 251, 0); }
+    to   { background: rgba(251, 251, 251); }
 }
 @keyframes fadeOut {
-    from { opacity: 1; }
-    to   { opacity: 0; }
+    from { background: rgba(251, 251, 251); }
+    to   { background: rgba(251, 251, 251,0); }
 }
 
 /* Firefox < 16 */
 @-moz-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+    from { background: rgba(251, 251, 251, 0); }
+    to   { background: rgba(251, 251, 251); }
 }
 @-moz-keyframes fadeOut {
-    from { opacity: 1; }
-    to   { opacity: 0; }
+    from { background: rgba(251, 251, 251); }
+    to   { background: rgba(251, 251, 251,0); }
 }
 
 /* Safari, Chrome and Opera > 12.1 */
 @-webkit-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+    from { background: rgba(251, 251, 251, 0); }
+    to   { background: rgba(251, 251, 251); }
 }
 @-webkit-keyframes fadeOut {
-    from { opacity: 1; }
-    to   { opacity: 0; }
+    from { background: rgba(251, 251, 251); }
+    to   { background: rgba(251, 251, 251,0); }
 }
 
 /* Internet Explorer */
 @-ms-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+    from { background: rgba(251, 251, 251, 0); }
+    to   { background: rgba(251, 251, 251); }
 }
 @-ms-keyframes fadeOut {
-    from { opacity: 1; }
-    to   { opacity: 0; }
+    from { background: rgba(251, 251, 251); }
+    to   { background: rgba(251, 251, 251,0); }
 }
 
 /* Opera < 12.1 */
 @-o-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+    from { background: rgba(251, 251, 251, 0); }
+    to   { background: rgba(251, 251, 251); }
 }
 @-o-keyframes fadeOut {
-    from { opacity: 1; }
-    to   { opacity: 0; }
+    from { background: rgba(251, 251, 251); }
+    to   { background: rgba(251, 251, 251,0); }
 }
 
 .active{
@@ -228,6 +244,10 @@ a{
     flex-wrap: wrap-reverse;
 }
 
+.container-home{
+    margin-top: 80px;
+}
+
 .home-text,
 .home-img{
     width: 40%;
@@ -238,17 +258,16 @@ a{
 
 .home-text h1{
     font-weight: 800;
-    font-size: 56px;
+    font-size: 3.5rem;
 }
 
 .home-text p{
     font-family: "Poppins", sans-serif;
-    /* font-size: 18px; */
     font-weight: 400;
 }
 
 .home-text .text-yellow{
-    color: #F8F82D;
+    color: #652AF5;
 }
 
 .home-img{
@@ -264,6 +283,19 @@ a{
 .home-img .img-box img{
     width: 80%;
     border-radius: 50%;
+}
+
+.profil{
+    transform: anim2 2s ease-in-out forwards;
+}
+
+@keyframes anim2{
+    0%{
+        transform: translateY(-100px);
+    }
+    100%{
+        transform: translateY(0);
+    }
 }
 
 .purple{
@@ -428,7 +460,7 @@ a{
 }
 
 .contact-desc h5{
-    font-size: 20px;
+    font-size: 1.5rem;
     font-weight: bold;    
 }
 
