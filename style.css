@@ -41,14 +41,13 @@ body{
     min-height: 100vh;
     /* background-image: linear-gradient(to bottom right, var(--pink-light), var(--cyan-light) 100%); */
     /* background: linear-gradient(180deg, var(--cyan-light) 0%, var(--black-semi-dark) 100%); */
-    background-image: url("assets/Rice-Flower.jpg");
+    background-image: url("./Assets/Rice-Flower.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     font-size: 1rem;
     color: var(--blue-dark);
     line-height: 1.5;
     overflow-x: hidden;
-    /* -webkit-top-highlight-color: transparent; */
     padding: 5vh 10px;
     font-family: "Quicksand", sans-serif;
     font-weight: 500;
@@ -61,7 +60,6 @@ body::before{
     top: 0;
     height: 100%;
     width: 100%;
-    /* background-color: var(--green-yellow); */
     z-index: -1;
     opacity: 0.12;
 }
@@ -105,7 +103,6 @@ a{
 
 /* NAVBAR */
 .navbar{
-    /* background: #fff; */
     position: absolute;
     top: 0;
     left: 0;
@@ -254,6 +251,7 @@ Opera < 12.1 */
     min-width: 300px;
     padding: 15px;
     max-height: 400px;
+    overflow: hidden;
 }
 
 .home-text h1{
@@ -274,27 +272,31 @@ Opera < 12.1 */
     position: relative;
 }
 
-.home-img .img-box{
-    max-width: 360px;
-    border-radius: 50%;
-    margin: auto;
-}
-
 .home-img .img-box img{
     width: 80%;
     border-radius: 50%;
+    animation: slide-kiri 1s ease-in-out forwards;
 }
 
-.profil{
-    transform: anim2 2s ease-in-out forwards;
+.text{
+    animation: slide-kanan 1s ease-in-out forwards;
 }
 
-@keyframes anim2{
+@keyframes slide-kiri {
     0%{
-        transform: translateY(-100px);
+        transform: translateX(80%);
     }
     100%{
-        transform: translateY(0);
+        transform: translateX(0);
+    }
+}
+
+@keyframes slide-kanan {
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0);
     }
 }
 
@@ -413,6 +415,14 @@ Opera < 12.1 */
     text-align: justify;
 }
 
+.slide-kiri{
+    animation: slide-kiri 1.5s ease-in-out forwards;
+}
+
+.slide-kanan{
+    animation: slide-kanan 1.5s ease-in-out forwards;
+}
+
 /* CONTACT */
 
 .field-contact{
@@ -523,6 +533,6 @@ body::-webkit-scrollbar {
   }
    
   body::-webkit-scrollbar-thumb {
-    background-color: rgb(118, 255, 175);
+    background-color: #8359E9;
     outline: 1px solid slategrey;
   }
