@@ -111,14 +111,17 @@ a{
     padding-left: 5%;
     padding-right: 5%;
     border-radius: 30px;
-    animation: anim .8s ease-in-out forwards;
+    opacity: 0;
+    animation: anim .8s ease-in-out 1.2s forwards;
 }
 
 @keyframes anim {
     0%{
+        opacity: 0;
         top: -6%;
     }
     100%{
+        opacity: 1;
         top: 0%;
     }
 }
@@ -264,7 +267,7 @@ Opera < 12.1 */
     font-weight: 400;
 }
 
-.home-text .text-yellow{
+.home-text .text-purple{
     color: #652AF5;
 }
 
@@ -282,6 +285,16 @@ Opera < 12.1 */
     animation: slide-kanan 1s ease-in-out forwards;
 }
 
+.text-name{
+    overflow: hidden;
+}
+
+.slide-bawah{
+    transform: translateY(-150%);
+    opacity: 0;
+    animation: slide-bawah 1s ease-out 1.2s forwards;
+}
+
 @keyframes slide-kiri {
     0%{
         transform: translateX(80%);
@@ -297,6 +310,17 @@ Opera < 12.1 */
     }
     100%{
         transform: translateX(0);
+    }
+}
+
+@keyframes slide-bawah {
+    0%{
+        transform: translateY(-150%);
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
     }
 }
 
