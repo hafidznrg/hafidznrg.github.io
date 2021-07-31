@@ -159,7 +159,7 @@ a{
 }
 
 .nav-responsive{
-    background: rgba(251, 251, 251);
+    background: rgba(236, 236, 246);
     z-index: 1;
 }
 
@@ -184,52 +184,52 @@ Opera < 12.1 */
 }
 
 @keyframes fadein {
-    from { background: rgba(251, 251, 251, 0); }
-    to   { background: rgba(251, 251, 251); }
+    from { background: rgba(236, 236, 246, 0); }
+    to   { background: rgba(236, 236, 246); }
 }
 @keyframes fadeOut {
-    from { background: rgba(251, 251, 251); }
-    to   { background: rgba(251, 251, 251,0); }
+    from { background: rgba(236, 236, 246); }
+    to   { background: rgba(236, 236, 246, 0); }
 }
 
 /* Firefox < 16 */
 @-moz-keyframes fadein {
     from { background: rgba(251, 251, 251, 0); }
-    to   { background: rgba(251, 251, 251); }
+    to   { background: rgba(236, 236, 246); }
 }
 @-moz-keyframes fadeOut {
-    from { background: rgba(251, 251, 251); }
-    to   { background: rgba(251, 251, 251,0); }
+    from { background: rgba(236, 236, 246); }
+    to   { background: rgba(236, 236, 246, 0); }
 }
 
 /* Safari, Chrome and Opera > 12.1 */
 @-webkit-keyframes fadein {
     from { background: rgba(251, 251, 251, 0); }
-    to   { background: rgba(251, 251, 251); }
+    to   { background: rgba(236, 236, 246); }
 }
 @-webkit-keyframes fadeOut {
-    from { background: rgba(251, 251, 251); }
-    to   { background: rgba(251, 251, 251,0); }
+    from { background: rgba(236, 236, 246); }
+    to   { background: rgba(236, 236, 246, 0); }
 }
 
 /* Internet Explorer */
 @-ms-keyframes fadein {
     from { background: rgba(251, 251, 251, 0); }
-    to   { background: rgba(251, 251, 251); }
+    to   { background: rgba(236, 236, 246); }
 }
 @-ms-keyframes fadeOut {
-    from { background: rgba(251, 251, 251); }
-    to   { background: rgba(251, 251, 251,0); }
+    from { background: rgba(236, 236, 246); }
+    to   { background: rgba(236, 236, 246, 0); }
 }
 
 /* Opera < 12.1 */
 @-o-keyframes fadein {
     from { background: rgba(251, 251, 251, 0); }
-    to   { background: rgba(251, 251, 251); }
+    to   { background: rgba(236, 236, 246); }
 }
 @-o-keyframes fadeOut {
-    from { background: rgba(251, 251, 251); }
-    to   { background: rgba(251, 251, 251,0); }
+    from { background: rgba(236, 236, 246); }
+    to   { background: rgba(236, 236, 246, 0); }
 }
 
 .active{
@@ -367,16 +367,78 @@ Opera < 12.1 */
 .title{
     margin-top: 80px;
     margin-bottom: 20px;
-    animation: anim3 .5s ease-in forwards;
-}
-
-@keyframes anim3 {
-    from { opacity: 0; }
-    to { opacity: 1; }
 }
 
 .title h1{
     font-weight: 800;
+}
+
+.title span {
+    display: inline-block;
+}
+
+.title span:nth-of-type(2) {
+	animation-delay: .05s;
+}
+.title span:nth-of-type(3) {
+	animation-delay: .1s;
+}
+.title span:nth-of-type(4) {
+	animation-delay: .15s;
+}
+.title span:nth-of-type(5) {
+	animation-delay: .2s;
+}
+.title span:nth-of-type(6) {
+	animation-delay: .25s;
+}
+.title span:nth-of-type(7) {
+	animation-delay: .3s;
+}
+.title span:nth-of-type(8) {
+	animation-delay: .35s;
+}
+.title span:nth-of-type(9) {
+	animation-delay: .4s;
+}
+.title span:nth-of-type(10) {
+	animation-delay: .45s;
+}
+.title span:nth-of-type(11) {
+	animation-delay: .5s;
+}
+.title span:nth-of-type(12) {
+	animation-delay: .55s;
+}
+
+.title span {
+	color: #652AF5;
+	opacity: 0;
+	transform: translate(-300px, 0) scale(0);
+	animation: sideSlide .5s forwards;
+}
+
+@keyframes sideSlide {
+	60% {
+		transform: translate(20px, 0) scale(1);
+		color: #652AF5;
+	}
+
+	80% {
+		transform: translate(20px, 0) scale(1);
+		color: #652AF5;
+	}
+
+	99% {
+		transform: translate(0) scale(1.2);
+		color: #00f0ff;
+	}
+
+	100% {
+		transform: translate(0) scale(1);
+		opacity: 1;
+		color: #652AF5;
+	}
 }
 
 
@@ -406,6 +468,40 @@ Opera < 12.1 */
     zoom: 0.6;
 }
 
+.typewriter span {
+    display: inline-block;
+}
+
+.typewriter span:nth-of-type(2) {
+	animation-delay: .05s;
+}
+.typewriter span:nth-of-type(3) {
+	animation-delay: .1s;
+}
+.typewriter span:nth-of-type(4) {
+	animation-delay: .15s;
+}
+.typewriter span:nth-of-type(5) {
+	animation-delay: .2s;
+}
+.typewriter span:nth-of-type(6) {
+	animation-delay: .25s;
+}
+
+.typewriter span{
+    opacity: 0;
+    animation: 
+        typing .2s forwards;
+}
+
+@keyframes typing {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
 
 /* PROJECT */
 /* .project-section{
