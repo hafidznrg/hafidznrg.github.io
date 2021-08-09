@@ -41,7 +41,10 @@ body{
     min-height: 100vh;
     /* background-image: linear-gradient(to bottom right, var(--pink-light), var(--cyan-light) 100%); */
     /* background: linear-gradient(180deg, var(--cyan-light) 0%, var(--black-semi-dark) 100%); */
-    background-image: url("./Assets/Rice-Flower.jpg");
+    /* background-image: url("./Assets/Rice-Flower.jpg"); */
+    background: #7F7FD5;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #91EAE4, #86A8E7, #7F7FD5);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #91EAE4, #86A8E7, #7F7FD5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-size: cover;
     background-repeat: no-repeat;
     font-size: 1rem;
@@ -133,7 +136,11 @@ a{
     font-family: "Poppins", sans-serif;
     font-weight: 600;
     font-size: 1.5rem;
-    color: #8359E9;
+    color: #652AF5;
+}
+
+.navbar-brand:hover{
+    color: #652AF5;
 }
 
 .nav-link{
@@ -266,7 +273,7 @@ Opera < 12.1 */
     font-weight: 400;
 }
 
-.home-text .text-purple{
+.text-purple{
     color: #652AF5;
 }
 
@@ -515,11 +522,13 @@ Opera < 12.1 */
 }
 
 .container-project{
-    padding: 20px 0;;
+    padding: 20px 0;
+    overflow: hidden;
 }
 
 .line-project{
-    width: 100%;
+    margin-left: 4% !important;
+    width: 92%;
     height: 3px;
     background: #f2f2f2;
     margin: 20px 0;
@@ -609,7 +618,7 @@ Opera < 12.1 */
     background: #f2f2f2;
 }
 
-.contact-email{
+.contact-text{
     margin: 20px;
 }
 
@@ -629,7 +638,7 @@ Opera < 12.1 */
     zoom: 1.2;
 }
 
-.instagram {
+.instagram:hover {
     background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
     -webkit-background-clip: text;
             /* Also define standard property for compatibility */
@@ -638,7 +647,7 @@ Opera < 12.1 */
     transition: ease-out 0.5s;
 }
 
-.github{
+.github:hover{
     color: black;
     transition: ease-out 0.5s;
 }
