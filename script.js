@@ -17,6 +17,10 @@ $( '#navbar .navbar-toggler' ).on('click', function() {
 	};
 });
 
+$( '#contact .submit-button' ).on('click', function() {
+	// console.log("terkirim");
+})
+
 // Belum bisa implementasinya
 // var form = document.getElementById("myform");
     

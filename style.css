@@ -588,12 +588,14 @@ Opera < 12.1 */
     width: 160px;
 }
 
-.submit a{
+.submit-button{
+    background: transparent;
+    border: none;
     color: #2132CF;
     font-weight: bold;
 }
 
-.submit a:hover{
+.submit-button:hover{
     color: #0C852E;
 }
 
@@ -652,7 +654,7 @@ Opera < 12.1 */
     transition: ease-out 0.5s;
 }
 
-.linkedin{
+.linkedin:hover{
     color: #0099CC;
     transition: ease-out 0.5s;
 }
